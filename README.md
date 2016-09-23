@@ -1,6 +1,6 @@
 # Virtus Symfony CMF
 
-## Instalation
+## Installation
 
     composer install
     npm install
