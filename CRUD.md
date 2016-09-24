@@ -132,6 +132,31 @@ public function destroyAction(Request $request)
 }
 ```
 
+## getCrudOptions()
+
+These options are used to create CRUD object when you call method $this `$this->crudFactory()->create($this)`.
+
+```php
+public function getCrudOptions()
+{
+    return [
+        // CRUD options
+    ];
+}
+```
+
+### Options list
+
+Option | Description | Type | Required | Default
+:---: | --- | :---: | :---: | :---:
+`flash_prefix` | Used as a prefix in firts argument of `addFlash`. | `string` | 0 | `''`
+`message_prefix` | Used as a prefix in translation text of second argument `addFlash`. | `string` | 0 | `''`
+`message_domain` | Translation domain for `message_prefix`. | `string|null` | 0 | `null`
+`message_parameters` | Translation parameters for `message_prefix`. | `array` | 0 | `[]`
+`route_prefix` | Prefix of all routes used in controller. | `string` | 1 |
+`route_params` | Closure used to generate route params. | `function ($entity) { // ... }` | 0 | In brief `'id' => $entity->getId()` |
+`manager` | Manager service. | `ControllerManagerInterface` | 1 |
+
 # CRUD Routing Loader
 
 This is example CRUD routing entry.
