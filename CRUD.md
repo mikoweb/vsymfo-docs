@@ -211,3 +211,14 @@ _my_own_route:
     methods:  [GET]
     defaults: { _controller: myOwn }
 ```
+
+## Options
+
+Option | Description | Type | Required | Default
+:---: | --- | :---: | :---: | :---:
+`route_prefix` | Prefix for all generated routes names. | `string` | 1 |
+`controller` | Prefix controller name for all generated routes. | `string` | 1 |
+`except` | List of unused CRUD methods ie. `read`, `index`, `show`, `create`, `update`, `delete`. | `array` | 0 | `[]`
+`index_pagination` | If true then index route has pagination params. | `bool` | 0 | `false`
+`index_sort` | If true then index route has sort params. | `bool` | 0 | `false`
+`index_sort_params` | This is for `index_sort` option. You can set two properties `sort` and `direction`. They define the defaults values. | `hash` | 0 | `[]`
