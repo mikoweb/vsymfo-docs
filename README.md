@@ -24,4 +24,4 @@
 
 ## Documentation
 
-- [CRUD](CRUD.md)
+- [How to use CRUD](CRUD.md)
