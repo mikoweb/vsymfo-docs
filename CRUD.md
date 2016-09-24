@@ -10,6 +10,7 @@
     - [CRUD methods options](#crud-methods-options)
 - [CRUD Routing Loader](#crud-routing-loader)
     - [Options](#options)
+- [Manager Service](#manager-service)
 
 ## Creating a CRUD Controller
 
