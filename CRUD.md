@@ -107,7 +107,7 @@ public function updateAction(Request $request)
 
 ## Delete
 
-Use below methods to destroy entity.
+Use below method to destroy entity.
 
 ```php
 public function destroyAction(Request $request)
