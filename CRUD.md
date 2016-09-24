@@ -10,9 +10,9 @@ Below is an example controller without unnecessary details.
 
 ```php
 namespace App\PanelBundle\Controller;
->
+
 use vSymfo\Bundle\PanelBundle\Controller\Controller;
->
+
 class ContentController extends Controller
 {
     public function getCrudOptions()
@@ -23,12 +23,12 @@ class ContentController extends Controller
             'message_prefix' => 'content.messages',
         ];
     }
->
+
     protected function getManager()
     {
         return $this->get('app.manager.content');
     }
->
+
     protected function getViewPrefix()
     {
         return 'AppPanelBundle:Content';
