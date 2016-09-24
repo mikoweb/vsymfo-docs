@@ -1,5 +1,12 @@
 # Create, read, update and delete
 
+- [Creating a CRUD Controller](#creating-a-crud-controller)
+    - [Create](#create)
+    - [Read](#read)
+    - [Update](#update)
+    - [Delete](#delete)
+- [CRUD Routing Loader](#crud-routing-loader)
+
 ## Creating a CRUD Controller
 
 Your controller should inherit from class `CrudableControllerAbstract` but typically used class in panel is 
