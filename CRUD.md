@@ -156,7 +156,7 @@ crud:
 # _controller: myOwn <=> AppPanelBundle:Content:myOwn
 
 _my_own_route:
-    path: /my-own-url
-    methods: [GET]
+    path:     /my-own-url
+    methods:  [GET]
     defaults: { _controller: myOwn }
 ```
