@@ -152,10 +152,29 @@ Option | Description | Type | Required | Default
 `flash_prefix` | Used as a prefix in firts argument of `addFlash`. | `string` | 0 | `''`
 `message_prefix` | Used as a prefix in translation text of second argument `addFlash`. | `string` | 0 | `''`
 `message_domain` | Translation domain for `message_prefix`. | `string|null` | 0 | `null`
-`message_parameters` | Translation parameters for `message_prefix`. | `array` | 0 | `[]`
+`message_parameters` | Translation parameters for `message_prefix`. | `hash` | 0 | `[]`
 `route_prefix` | Prefix of all routes used in controller. | `string` | 1 |
 `route_params` | Closure used to generate route params. | `function ($entity) { // ... }` | 0 | In brief `'id' => $entity->getId()` |
 `manager` | Manager service. | `ControllerManagerInterface` | 1 |
+
+## CRUD methods options
+
+All CRUD methods e.g. `edit`, `update`, `show`, `index` etc. has second optional argument `options`.
+
+```php
+$crud->edit($request, [
+ // ...
+]);
+```
+
+Option | Description | Type | Required | Default
+:---: | --- | :---: | :---: | :---:
+`form_options` | Third argument of `createForm`. | `array` | 0 | `[]`
+`form_type` | First argument of `createForm`. | `mixed` | 0 | `null`
+`add_flash` | If true then call `addFlash`. | `bool` | 0 | `true`
+`redirect_url` | Some actions are doing a redirect after end. CRUD can independently deduced where to redirect. | `string|null` | 0 | `null`
+`route_params` | Override `route_params` from `getCrudOptions`. | `callable|null` | 0 | `null`
+`events` | See to `DataEvent` class. | `hash` | 0 | `[]`
 
 # CRUD Routing Loader
 
