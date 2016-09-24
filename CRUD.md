@@ -124,3 +124,39 @@ public function destroyAction(Request $request)
     ]);
 }
 ```
+
+# CRUD Routing Loader
+
+This is example CRUD routing entry.
+
+`routing.yml`
+
+```yml
+panel_content:
+    resource: "@AppPanelBundle/Resources/config/routing/content.yml"
+    prefix:   /content
+    type:     crud
+```
+
+`content.yml`
+
+```yml
+crud:
+    path:                  /
+    options:
+        route_prefix:      panel_content
+        controller:        AppPanelBundle:Content
+        index_pagination:  true
+        index_sort:        true
+        index_sort_params:
+            sort: c.id
+            direction: asc
+
+# _my_own_route <=> panel_content_my_own_route
+# _controller: myOwn <=> AppPanelBundle:Content:myOwn
+
+_my_own_route:
+    path: /my-own-url
+    methods: [GET]
+    defaults: { _controller: myOwn }
+```
