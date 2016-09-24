@@ -25,3 +25,4 @@
 ## Documentation
 
 - [How to use CRUD](CRUD.md)
+- [The Manager Service](Manager-Service.md)
