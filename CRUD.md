@@ -5,7 +5,11 @@
     - [Read](#read)
     - [Update](#update)
     - [Delete](#delete)
+    - [getCrudOptions()](#getcrudoptions)
+        - [Options list](#options-list)
+    - [CRUD methods options](#crud-methods-options)
 - [CRUD Routing Loader](#crud-routing-loader)
+    - [Options](#options)
 
 ## Creating a CRUD Controller
 
