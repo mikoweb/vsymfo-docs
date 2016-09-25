@@ -231,7 +231,7 @@ Option | Description | Type | Required | Default
 # Manager Service
 
 This relates to `manager` option in `getCrudOptions`. You should know that CRUD does not work without this service.
-When you call `create`, `store`, `destroy` and other methods CRUD performs save etities, create a form
+When you call `create`, `store`, `destroy` and other methods, CRUD performs save entities, create a form
 and lots of other stuff. These are the Manager Service responsibilities.
 
-- [How create a Manager Service](Manager-Service.md)
+- [How to create a Manager Service](Manager-Service.md)
