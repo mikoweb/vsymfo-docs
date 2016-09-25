@@ -139,7 +139,7 @@ public function destroyAction(Request $request)
 
 ## getCrudOptions()
 
-These options are used to create CRUD object when you call method $this `$this->crudFactory()->create($this)`.
+These options are used to create CRUD object when you call method `$this->crudFactory()->create($this)`.
 
 ```php
 public function getCrudOptions()
