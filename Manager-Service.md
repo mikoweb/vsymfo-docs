@@ -1,7 +1,7 @@
 # The Manager Service
 
 Controller in symfony most frequently operates on four objects ie. _Entity_, _FormBuilder_, _EntityManager_ and _Repository_.
-Manager Service helps for controller in this aspect. This makes the code that code of controller is more concise.
+Manager Service helps for controller in this aspect. This makes that the code of controller is more concise.
 In some ways, Manager Service is similar to Model. Manager Service is an important element of [CRUD](CRUD.md).
 
 ## How to create a Manager Service
