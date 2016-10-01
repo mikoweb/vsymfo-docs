@@ -180,6 +180,7 @@ Option | Description | Type | Required | Default
 `redirect_url` | Some actions are doing a redirect after end. CRUD can independently deduced where to redirect. | `string|null` | 0 | `null`
 `route_params` | Override `route_params` from `getCrudOptions`. | `callable|null` | 0 | `null`
 `events` | See to `DataEvent` class. | `hash` | 0 | `[]`
+`redirect_cancel_url` | Alternative redirect URL. This can be useful to do cancel button in form. | `string|null` | 0 | `null`
 
 # CRUD Routing Loader
 
