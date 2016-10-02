@@ -181,6 +181,7 @@ Option | Description | Type | Required | Default
 `route_params` | Override `route_params` from `getCrudOptions`. | `callable|null` | 0 | `null`
 `events` | See to `DataEvent` class. | `hash` | 0 | `[]`
 `redirect_cancel_url` | Alternative redirect URL. This can be useful to do cancel button in form. | `string|null` | 0 | `null`
+`entity` | Pass entity to CRUD. When this option is set then CRUD doesn't call `findEntity`. | `object|null` | 0 | `null`
 
 # CRUD Routing Loader
 
