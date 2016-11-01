@@ -2,10 +2,8 @@
 
 ## Installation
 
-    composer install
     npm install
-    webui install
-    webui grunt
+    composer install
     grunt copy-panel-theme
     php bin/console doctrine:schema:update --force
     php bin/console doctrine:fixtures:load --append --fixtures=vendor/mikoweb/vsymfo-panel-bundle/DataFixtures/Install
