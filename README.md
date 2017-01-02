@@ -9,6 +9,7 @@
     php bin/console doctrine:fixtures:load --append --fixtures=vendor/mikoweb/vsymfo-user-bundle/DataFixtures/Install
     php bin/console doctrine:fixtures:load --append --fixtures=src/App/PanelBundle/DataFixtures/Install
     php bin/console vsymfo:theme:install vsymfo-panel-theme backend_panel
+    php bin/console vsymfo:js-core:install
     php bin/console vsymfo:js:build --env=prod
     php bin/console vsymfo:js:install --env=prod
     php bin/console document:assets --base_path=/
